@@ -1,1 +1,14 @@
-
+#include<stdio.h>
+int main()
+{
+ int L,B,Area,Perimeter;
+ printf("Enter Length Of Rectangle = ");
+ scanf("%d", &L);
+ printf("Enter Breadth Of Rectangle = ");
+ scanf("%d", &B);
+ Area = L*B;
+ printf("Area Of Rectangle = %d\n",Area);
+ Perimeter=2*(L+B);
+ printf("Perimeter Of Rectangle = %d",Perimeter);
+ return 0;
+ }
