@@ -1,0 +1,14 @@
+*/ Write a C program to add two numbers, take number from user. */
+
+#include<stdio.h>
+int main()
+{
+ int A,B,Sum;
+ printf("Enter Value Of A = ");
+ scanf("%d", &A);
+ printf("Enter Value Of B = ");
+ scanf("%d", &B);
+ Sum=A+B;
+ printf("Sum = %d",Sum);
+ return 0;
+ }
