@@ -1,0 +1,11 @@
+*/  Write a C Program to print the address in multiple lines (new line).  */
+
+
+#include<stdio.h>
+int main()
+{
+ int n,i=1;
+ printf("Flat No. F/2, \nShiv Shine Apartment Tansen Nagar, \nGwalior, Madhya Pradesh - 474002");
+ return 0;
+ }
+ 
