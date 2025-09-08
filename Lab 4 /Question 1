@@ -1,0 +1,23 @@
+*/ WAP to take check if the triangle is valid or not. If the validity is established, 
+do check if the triangle is isosceles, equilateral, or scalene. 
+Take sides of the triangle as input from a user. */
+
+
+#include<stdio.h>
+int main()
+{
+ int Side1,Side2,Side3;
+ printf("Enter Sides Of Triangle = ");
+ scanf("%d", &Side1);
+ printf("Enter Sides Of Triangle = ");
+ scanf("%d", &Side2);
+ printf("Enter Sides Of Triangle = ");
+ scanf("%d", &Side3);
+ if(Side1 == Side2 == Side3)
+   printf("The Given Triangle Is Equilateral");
+ else if(Side1 == Side2 || Side2 == Side3 || Side3 == Side1)  
+   printf("The Given Triangle Is Isosceles");
+ else 
+   printf("The Given Triangle Is Scalene");
+   return 0;
+   }
