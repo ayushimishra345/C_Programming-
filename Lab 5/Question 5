@@ -1,0 +1,21 @@
+/* The population of a town is 100000. The population has increased steadily at the rate of 
+10% per year for the last 10 years. Write a program to determine the 
+population at the end of each year in the last decade. */
+
+#include <stdio.h>
+
+int main() {
+    double initialPopulation = 100000.0;
+    double growthRate = 0.10; // 10% annual increase
+    int years = 10;
+
+    printf("Population at the end of each year in the last decade:\n");
+    
+
+    for (int i = 1; i <= years; i++) {
+        initialPopulation = initialPopulation * (1 + growthRate);
+        printf("End of Year %d: %.0f\n", i, initialPopulation);
+    }
+
+    return 0;
+}
