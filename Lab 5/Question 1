@@ -1,1 +1,37 @@
+/*   WAP to enter numbers till the user wants. At the end, 
+it should display the count of positive, negative, and Zeroes entered. */
 
+
+
+#include <stdio.h>
+
+int main() {
+    int num;
+    int Positive = 0;
+    int Negative = 0;
+    int Zero = 0;
+    char Choice;
+
+    do {
+        printf("Enter A Number: ");
+        scanf("%d", &num);
+
+        if (num > 0) {
+            Positive++;
+        } else if (num < 0) {
+            Negative++;
+        } else {
+            Zero++;
+        }
+
+        printf("Do You Want To Enter Another Number? (y/n): ");
+        scanf(" %c", &Choice); 
+    } while (Choice == 'y' || Choice == 'Y');
+
+    printf("\n--- Results ---\n");
+    printf("Positive Numbers: %d\n", Positive);
+    printf("Negative Numbers: %d\n", Negative);
+    printf("Zeroes: %d\n", Zero);
+
+    return 0;
+}
