@@ -1,1 +1,42 @@
+/* WAP using ternary operator, the user should input the length and breadth of a rectangle, 
+one has to find out which rectangle has the highest perimeter. 
+The minimum number of rectangles should be three.  */ 
 
+
+
+#include <stdio.h>
+int main()
+{
+  float Length1,Breadth1,Perimeter1;
+  float Length2,Breadth2,Perimeter2;
+  float Length3,Breadth3,Perimeter3;
+  float Highest_Perimeter;
+  
+  printf("Enter Length Of Rectangle 1 = ");
+  scanf("%f", &Length1);  
+  printf("Enter Breadth Of Rectangle 1 = ");
+  scanf("%f", &Breadth1); 
+  Perimeter1 = 2*(Length1 + Breadth1);
+  
+  printf("Enter Length Of Rectangle 2 = ");
+  scanf("%f", &Length2);  
+  printf("Enter Breadth Of Rectangle 2 = ");
+  scanf("%f", &Breadth2); 
+  Perimeter2 = 2*(Length2 + Breadth2);
+  
+  printf("Enter Length Of Rectangle 3 = ");
+  scanf("%f", &Length3);  
+  printf("Enter Breadth Of Rectangle 3 = ");
+  scanf("%f", &Breadth3); 
+  Perimeter3 = 2*(Length3 + Breadth3);
+  
+  Highest_Perimeter = (Perimeter1 > Perimeter2) ?
+                      ((Perimeter1 > Perimeter3) ? Perimeter1 : Perimeter3) : 
+                      ((Perimeter2 > Perimeter3) ? Perimeter2 : Perimeter3) ; 
+ 
+ printf("\nPerimeter Of Rectangle 1 = %.2f",Perimeter1);
+ printf("\nPerimeter Of Rectangle 2 = %.2f",Perimeter2);
+ printf("\nPerimeter Of Rectangle 3 = %.2f",Perimeter3);
+ printf("\nThe Highest Perimeter Among The Rectangles Is = %.2f",Highest_Perimeter);
+  return 0;
+  }
