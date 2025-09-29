@@ -1,1 +1,4 @@
+/* Declare a global variable outside all functions and 
+use it inside various functions to understand its accessibility.  */
+
 
